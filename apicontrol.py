@@ -3,8 +3,7 @@ import os
 import time
 
 # Database connection details
-
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = "postgres://default:Z2qBOaWyo7VI@ep-plain-queen-a47orz11.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
 
 # Connect to the PostgreSQL database
 conn = psycopg2.connect(DATABASE_URL)
